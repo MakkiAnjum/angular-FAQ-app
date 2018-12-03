@@ -1,0 +1,12 @@
+<div>
+  <div class="card">
+    <div class="card-header">
+      {{ question.text }} <a href="#" class="btn btn-link" (click)="question.hide = !question.hide">Show</a>
+          | <a href="#" class="btn btn-link" (click)="removeQuestion(question)">Remove</a>
+    </div>
+    <div class="card-body" [hidden]="question.hide" >
+      <p class="card-text"> {{ question.answer }} </p>
+    </div>
+  </div>
+  <br>
+</div>
